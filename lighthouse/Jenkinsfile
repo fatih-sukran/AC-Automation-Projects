@@ -16,7 +16,7 @@ pipeline {
     }
 
     environment {
-        suite.id = "${params.SUITE_ID}"
+        suite.id = params.SUITE_ID
     }
 
     stages {
