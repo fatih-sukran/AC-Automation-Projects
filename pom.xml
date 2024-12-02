@@ -13,8 +13,8 @@
     </modules>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <kotlin.version>2.1.0</kotlin.version>
         <restassured.version>5.5.0</restassured.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
