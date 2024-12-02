@@ -8,6 +8,7 @@ pipeline {
     }
 
     tools {
+        jdk "jdk"
         maven "maven"
     }
 
@@ -23,7 +24,7 @@ pipeline {
         stage("Run Automation Tests") {
             steps {
                 script {
-                    sh script: "mvn -pl clean test", returnStatus: true
+                    sh script: "mvn -pl lighthouse clean test", returnStatus: true
                 }
             }
         }
