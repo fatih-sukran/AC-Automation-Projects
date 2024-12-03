@@ -12,7 +12,7 @@ import io.restassured.module.kotlin.extensions.When
 import org.apache.http.HttpStatus
 import java.time.LocalDateTime
 
-class LighthouseService() {
+class LighthouseService {
     private val suiteId: Long
     private val reportId: Long
     private val pages: List<Page>
