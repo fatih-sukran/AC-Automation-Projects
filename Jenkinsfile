@@ -23,7 +23,7 @@ pipeline {
         stage("Run Automation Tests") {
             steps {
                 script {
-                    sh script: "mvn -pl lighthouse clean test", returnStatus: true
+                    sh script: "mvn clean test", returnStatus: true
                 }
             }
         }
