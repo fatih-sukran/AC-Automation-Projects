@@ -27,6 +27,15 @@ pipeline {
                 }
             }
         }
+
+        stage("Generate Allure Report") {
+            steps {
+                allure includeProperties:
+                        false,
+                        jdk: '',
+                        results: [[path: 'allure-results']]
+            }
+        }
     }
 
 }
